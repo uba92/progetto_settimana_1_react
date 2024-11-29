@@ -2,7 +2,7 @@ import { Component } from 'react'
 import SingleCard from './SingleCard'
 import { Row } from 'react-bootstrap'
 
-class LOTRGallery extends Component {
+class SWGallery extends Component {
   render() {
     return (
       <Row className='g-3'>
@@ -14,4 +14,4 @@ class LOTRGallery extends Component {
   }
 }
 
-export default LOTRGallery
+export default SWGallery

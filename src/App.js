@@ -3,18 +3,29 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MyNavbar from './components/MyNavbar'
 import { Container } from 'react-bootstrap'
 import MyHeading from './components/MyHeading'
+import MyGallery from './components/MyGallery'
+import MyFooter from './components/MyFooter'
+import MySlider from './components/MySlider'
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App bg-dark text-light'>
       <header>
         <MyNavbar logoPath={'./assets/images/logo.png'} isFluid={true} />
       </header>
-      <main data-bs-theme='dark' bg='dark'>
+      <main className='bg-dark text-light'>
         <Container fluid>
           <MyHeading />
         </Container>
+        <Container fluid>
+          <MyGallery />
+        </Container>
+
+        <MySlider />
       </main>
+      <footer className='bg-dark text-light'>
+        <MyFooter />
+      </footer>
     </div>
   )
 }
