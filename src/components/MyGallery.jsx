@@ -95,11 +95,7 @@ class MyGallery extends Component {
           {this.state.isError && (
             <Alert variant='danger'>Oops! Qualcosa è andato storto!😭</Alert>
           )}
-          {this.state.isLoading && (
-            <Spinner animation='border' role='status'>
-              <span className='visually-hidden'>Loading...</span>
-            </Spinner>
-          )}
+          {this.state.isLoading && <Spinner animation='grow' />}
           {!this.state.isLoading &&
             !this.state.isError &&
             this.state.films1 === 0 && (
@@ -117,11 +113,7 @@ class MyGallery extends Component {
           {this.state.isError && this.state.films2 === 0 && (
             <Alert variant='danger'>Oops! Qualcosa è andato storto!😭</Alert>
           )}
-          {this.state.isLoading && (
-            <Spinner animation='border' role='status'>
-              <span className='visually-hidden'>Loading...</span>
-            </Spinner>
-          )}
+          {this.state.isLoading && <Spinner animation='grow' />}
           {!this.state.isLoading &&
             !this.state.isError &&
             this.state.films2 === 0 && (
@@ -138,11 +130,7 @@ class MyGallery extends Component {
           {this.state.isError && (
             <Alert variant='danger'>Oops! Qualcosa è andato storto!😭</Alert>
           )}
-          {this.state.isLoading && (
-            <Spinner animation='border' role='status'>
-              <span className='visually-hidden'>Loading...</span>
-            </Spinner>
-          )}
+          {this.state.isLoading && <Spinner animation='grow' />}
           {!this.state.isLoading &&
             !this.state.isError &&
             this.state.films3 === 0 && (
