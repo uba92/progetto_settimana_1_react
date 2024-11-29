@@ -5,7 +5,6 @@ import { Container } from 'react-bootstrap'
 import MyHeading from './components/MyHeading'
 import MyGallery from './components/MyGallery'
 import MyFooter from './components/MyFooter'
-import MySlider from './components/MySlider'
 
 function App() {
   return (
@@ -20,8 +19,6 @@ function App() {
         <Container fluid>
           <MyGallery />
         </Container>
-
-        <MySlider />
       </main>
       <footer className='bg-dark text-light'>
         <MyFooter />
