@@ -106,7 +106,7 @@ class MyGallery extends Component {
               </ListGroup>
             )}
 
-          <LOTRGallery filmList={this.state.films1} />
+          <LOTRGallery filmList={this.state.films1.slice(0, 6)} />
         </div>
         <div>
           <h3 className='my-5'>Star wars Saga</h3>
@@ -123,7 +123,7 @@ class MyGallery extends Component {
                 </ListGroup.Item>
               </ListGroup>
             )}
-          <SWGallery filmList={this.state.films2} />
+          <SWGallery filmList={this.state.films2.slice(0, 6)} />
         </div>
         <div>
           <h3 className='my-5'>BTF Saga</h3>
@@ -140,7 +140,7 @@ class MyGallery extends Component {
                 </ListGroup.Item>
               </ListGroup>
             )}
-          <BTFGallery filmList={this.state.films3} />
+          <BTFGallery filmList={this.state.films3.slice(0, 6)} />
         </div>
       </>
     )
